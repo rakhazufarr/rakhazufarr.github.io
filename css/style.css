@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main-title {
+    position: absolute;
+    font-size: 5rem;
+}
+
+
+nav {
+    position: absolute;
+    display: flex;
+    padding: 3rem 10rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+
+nav>.button>a {
+    text-decoration: none;
+    padding: 0rem 1rem;
+}
+
+.button>a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+
+.content-images {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content-images>div>img {
+    margin-top: 10%;
+    width: 80%;
+}
+
+.content-images>div>h4 {
+    font-size: 1.5rem;
+}
+
+.person {
+    padding-right: 7px;
+}
+
+.content2 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    align-items: center;
+}
+
+.background1 {
+    position: absolute;
+    width: 80%;
+    height: 100vh;
+    left: 20%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.row-contact {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact {
+    text-align: center;
+    align-items: center;
+    font-size: 120%;
+}
+
+.mainContact {
+    font-size: 150%;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 40%;
+    transform: translate(-30%, -40%);
+
+}
+
+@media screen and (max-width: 750px) {
+    nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        text-align: center;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+
+    nav>h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .main-title {
+        font-size: 3rem;
+    }
+
+    nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 5%;
+
+    }
+
+    .contact {
+        text-align: center;
+        align-items: center;
+        font-size: 50%;
+    }
+
+    .mainContact {
+        font-size: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 30%;
+        left: 40%;
+        transform: translate(-30%, -40%);
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main-title {
+        font-size: 2rem;
+    }
+
+    nav {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+
+    nav>h3 {
+        font-size: 1.4rem;
+    }
+
+}
